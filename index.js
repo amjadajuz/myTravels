@@ -11,6 +11,7 @@ function searchDestinations(query) {
                 return `<div class="result-item">
                             <h3>${beach.name}</h3>
                             <p>${beach.description}</p>
+                            <button>visit</button>
                         </div>`;
             }).join('');
             resultsContainer.innerHTML = beaches;
@@ -20,6 +21,7 @@ function searchDestinations(query) {
                 return `<div class="result-item">
                             <h3>${temple.name}</h3>
                             <p>${temple.description}</p>
+                            <button>visit</button>
                         </div>`;
             }).join('');
             resultsContainer.innerHTML = temples;
@@ -29,6 +31,7 @@ function searchDestinations(query) {
                 return `<div class="result-item">
                             <h3>${country.name}</h3>
                             <p>${country.description}</p>
+                            <button>visit</button>
                         </div>`;
             }).join('');
             resultsContainer.innerHTML = countries;

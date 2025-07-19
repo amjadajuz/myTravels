@@ -58,8 +58,6 @@ nav{
 }
 .hero {
     position: relative;
-   
-    height: 100vh;
     color: #fff;
     text-align: center;
     display: flex;
@@ -72,6 +70,7 @@ nav{
     background: #000A;
     padding: 20px;
     border-radius: 10px;
+    margin:10% 0;
 }
 .hero-content h1 {
     font-size: 3rem;
@@ -111,7 +110,86 @@ nav{
 
     .result-item {
         padding: 5px;
-        background: #280000;
+        background: #ffffff;
         border-radius: 10px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        color: #280000;
+
+        button{
+            background: #ffcc00;
+            border: none;
+            color: #280000;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 8px 32px;
+            border-radius: 10px;
+        }
+    }
+}
+
+.contact {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    h1{
+        font-size:32px;
+        position: relative;
+        flex:1;
+        text-align: center;
+
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex:1;
+        padding: 100px;
+        background-color: #140000;
+        border-radius: 15px;
+        label{
+            color: #fff;
+            font-size: 20px;
+        }
+        input{
+            padding:10px
+        }
+        button{
+            padding: 10px;
+            background-color: #ffcc00;
+            color: #280000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    }
+}
+
+.team-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    margin:0 100px;
+    justify-content: space-between;
+
+    .profile{
+        background-color: #280000;
+        color: #ccc;
+        width:200px;
+        padding:10px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+      
+        img{
+            width:100px;
+            height:100px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
     }
 }
