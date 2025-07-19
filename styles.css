@@ -15,12 +15,17 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:100%
+    width:100vw
+}
+.logo{
+    width:33%
 }
 .nav-links {
     list-style: none;
     display: flex;
+    justify-content: space-between;
     gap: 20px;
+    width:33%
 }
 
 .nav-links a {
@@ -31,21 +36,43 @@ nav{
 .search-bar {
     display: flex;
     gap: 10px;
+    justify-content: flex-end;
+    width:33%;
+    input {
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+    }
+    button{
+        padding: 5px 10px;
+        background-color: #ffcc00;
+        color: #280000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 }
-
-.hero {
-    position: relative;
+.bg-image {
     background: url('./assets/background.jpg') no-repeat;
     background-size: cover;
+}
+.hero {
+    position: relative;
+   
     height: 100vh;
     color: #fff;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.hero-content {
+    background: #000A;
+    padding: 20px;
+    border-radius: 10px;
+}
 .hero-content h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -70,4 +97,21 @@ nav{
     left: 20px;
     display: flex;
     gap: 10px;
+}
+.search-results {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .result-item {
+        padding: 5px;
+        background: #280000;
+        border-radius: 10px;
+    }
 }
